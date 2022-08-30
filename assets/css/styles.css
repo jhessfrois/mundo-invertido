@@ -1,5 +1,4 @@
-/*--- FONTES ---*/
-
+/***  FONTS ***/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
@@ -65,6 +64,11 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  transition: 1s;
+}
+
+body {
+  background: var(--page-background);
 }
 
 h1,
@@ -96,7 +100,26 @@ button {
   font-size: 1.25rem;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 2s;
+  transition: background 1s;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+main::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--page-background) no-repeat,
+    url("../images/backgrounds/florest.png") no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 input,
@@ -105,6 +128,11 @@ textarea {
   background-color: var(--field-background-color);
   color: var(--primary-color-contrast);
   padding: 8px;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
 }
 
 label {
@@ -192,26 +220,6 @@ header::before {
 
   mask: var(--character-bottom-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
-}
-
-/*--- MAIN STYLES ---*/
-
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--page-background) no-repeat,
-    url("../images/backgrounds/florest.png") no-repeat;
-  background-size: cover;
-  z-index: -1;
 }
 
 /*--- SECTIONS STYLES ---*/
