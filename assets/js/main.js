@@ -1,4 +1,3 @@
-
 import { subscribeToHellfireClube } from './data/hellfire-clube.js'
 
 (function main() {
@@ -15,7 +14,7 @@ import { subscribeToHellfireClube } from './data/hellfire-clube.js'
             character: txtCharacter.value
         }
 
-        const id = await subscribeToHellfireClube(subscribe)
-        alert(`Inscrição ${id} adicionada com sucesso!`)
+        const subscriptionId = await subscribeToHellfireClube(subscribe)
+        alert(`Inscrição ${subscriptionId} adicionada com sucesso!`)
     })
 })()
