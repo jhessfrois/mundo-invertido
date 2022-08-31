@@ -1,10 +1,10 @@
 import { subscribeToHellfireClube } from './data/hellfire-clube.js'
 
 (function main() {
-    const txtName = document.getElementById('txtName')
-    const txtEmail = document.getElementById('txtEmail')
-    const txtLevel = document.getElementById('txtLevel')
-    const txtCharacter = document.getElementById('txtCharacter')
+    const txtName = document.getElementById('txtName');
+    const txtEmail = document.getElementById('txtEmail');
+    const txtLevel = document.getElementById('txtLevel');
+    const txtCharacter = document.getElementById('txtCharacter');
 
     document.getElementById('btnSubscribe').addEventListener('click', async () => {
         const subscribe = {
@@ -16,5 +16,10 @@ import { subscribeToHellfireClube } from './data/hellfire-clube.js'
 
         const subscriptionId = await subscribeToHellfireClube(subscribe)
         alert(`Inscrição ${subscriptionId} adicionada com sucesso!`)
+
+        txtName.value = ''
+        txtEmail.value = ''
+        txtLevel.value = ''
+        txtCharacter.value = ''
     })
 })()
