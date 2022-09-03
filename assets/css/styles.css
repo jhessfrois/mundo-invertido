@@ -423,3 +423,142 @@ footer::after {
   right: -50px;
   transform: rotateZ(10deg);
 }
+
+@media screen and (max-width: 480px) {
+  .header-content p {
+    padding-left: 20px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  #section-inverted-world .section-texts h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 150px;
+    left: 10px;
+  }
+
+  #section-inverted-world .section-texts p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 140px;
+    right: 3px;
+  }
+
+  #section-inverted-world img {
+    width: 70%;
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
+  }
+
+  .video-frame {
+    width: 85%;
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+  }
+
+  .video-frame iframe {
+    width: 100%;
+  }
+
+  #section-stranger-things-trailer .section-texts h2 {
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    padding: 20px 20px;
+    
+  }
+
+  #section-stranger-things-trailer .section-texts p {
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 88px;
+    bottom: 110px;
+  }
+
+  #section-stranger-things-gallery .container h2 {
+    width: 80%;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    left: 30px;
+    bottom: 150px;
+  }
+
+  #section-stranger-things-gallery .gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+    left: 30px;
+    padding: 60px;
+  }
+
+  #section-stranger-things-gallery .gallery-image {
+    width: 70%;
+  }
+
+  #section-form h2 {
+    width: 500px;
+    position: relative;
+    bottom: 200px;
+  }
+
+  #section-form p {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    bottom: 230px;
+  }
+
+  #section-form .form-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 200px;
+  }
+
+  #section-form .form-content h3 {
+    width: 70%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #section-form .form-container {
+    position: relative;
+    top: 50px;
+  }
+
+  footer::before, footer::after {
+    width: 200px;
+    position: absolute;
+    top: 150px;
+  }
+
+  footer p {
+    width: 80%;
+    font-size: 16px;
+    position: relative;
+    bottom: 30px;
+  }
+
+  footer img {
+    width: 30%;
+    position: relative;
+    bottom: 20px;
+  }
+
+}
