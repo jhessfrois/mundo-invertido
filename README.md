@@ -13,7 +13,7 @@ Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Inve
 <br>
 
 ## Github Pages
-[🔗 Clique aqui para acessar](https://jhessfrois.github.io/jogo-forca/)
+[🔗 Clique aqui para acessar](https://jhessfrois.github.io/mundo-invertido/)
 <br>
 <br>
 
