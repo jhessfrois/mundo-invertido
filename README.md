@@ -1,6 +1,6 @@
 <p align="center">
   <img alt="Logo Digital Inovation One" src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="200px" />
-</p>
+</p> 
 
 <p align="center">
 Aplicação desenvolvida na Semana Front End da DIO.
